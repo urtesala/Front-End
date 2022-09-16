@@ -1,0 +1,50 @@
+.bigIcon{
+    font-size: 50px;
+}
+.redIcon{
+    color: red;
+}
+.italicIcon{
+    font-style: italic;
+}
+/* mokinamės selectors */
+li{
+    font-size: 20px;
+}
+.class0{
+    color: red;
+}
+#id0{
+    color: darkgreen;
+}
+.class1.class2{
+    text-decoration:underline;
+}
+.class3 .class4{
+    text-decoration: line-through;
+}
+section.class3 *{
+    font-family: monospace;
+
+}
+h1, h2, h3{
+    text-align: center;
+}
+div p{
+    color: navy;
+}
+.class3 > p{
+    background-color: blanchedalmond;
+}
+a:link{
+    color: aquamarine;
+}
+a:visited{
+    color: chartreuse;
+}
+a:active{
+    color: deeppink;
+}
+li:hover{
+    background-color: dimgray;
+}

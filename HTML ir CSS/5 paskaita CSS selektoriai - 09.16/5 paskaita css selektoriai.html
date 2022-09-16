@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 paskaita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./5paskaita.css">
+</head>
+<body>
+    <section> <!--Ikonos-->
+        <h1>Icons</h1>
+        <div>
+            <h2>Font Awesome</h2> <!--Font awesome-->
+            <p>
+                Norint naudoti Font-Awesome, pirmiausia reikia įsikelti linką į dokumentą arba linką į css
+            </p>
+            <p>
+                Norint panaudoti ikonas reikia naudoti 'i' arba span tag'us ir jiem
+                suteikus class atributą, nurodyti fa klasę ir norimos ikonos klasę.
+            </p>
+            <i class="fa fa-address-book"></i>
+        </div>
+        <div>
+            <h2>Bootstrap</h2>
+            <p>
+                Norint naudoti Bootstrap, pirmiausia reikia įsikelti linką į dokumentą arba linką į css
+                <br> (Prijungti biblioteką)
+            </p>
+            <p>
+                Norint panaudoti ikonas reikia naudoti į span tag ir jiem
+                suteikus class atributą, nurodyti glyphicon klasę ir content dalyje
+                įrašyti ikonos Unicode.
+            </p>
+            <i class="glyphicon glyphicon-camera"></i>
+
+        </div>
+        <div>
+            <h2>Google ikonos</h2>
+            <p>
+                Norint naudoti GOOGLE ICONS, pirmiausia reikia įsikelti linką į dokumentą arba linką į css<br>
+                Norint panaudoti ikonas reikia naudoti 'i' arba span tag'us ir jiem
+                suteikus class atributą įrašyti ikonos pavadinimą arba Unicode.
+            </p>
+            <i class="material-icons">brightness_high</i>
+        </div>
+        <div> <!--ikonų stilizavimas-->
+            <h2>Ikonų stilizavimas</h2>
+            <p>
+                Ikonas reikia stilizuoti kaip tekstinius elementus.
+                (ne width + height, bet font-size ir panašiai)
+            </p>
+            <i class="material-icons bigIcon">brightness_high</i>
+            <i class="material-icons redIcon">brightness_high</i>
+            <i class="material-icons italicIcon">brightness_high</i>
+        </div>
+        <div><!--parent and child elements-->
+            <h2>Parent ir child elements</h2>
+            <p>
+                Elementas, kuris savo viduje turi kitus elementus yra TĖVINIS (PARENT) elementas.<br>
+                Elementas, kuris yra kažkokio elemento viduje yra vadinamas VAIKINIS (CHILD) elementas.
+            </p>
+            <p>
+                Elementas gali turėti vieną vienintelį tėvinį (parent) elementą. <br>
+                Elementas gali turėti daugelį vaikinių (child) elementų,
+            </p>
+            <ul>
+                <li>Pirmas</li>
+                <li>Antras</li>
+                <li>Trečias</li>
+                <ul>
+                    <li>Trečio pirmas</li>
+                    <li>Trečio antras</li>
+                    <li>Trečio trečias</li>
+                    <li>Trečio ketvirtas</li>
+                </ul>
+                <li>Ketvirtas</li>
+            </ul>
+        </div>
+    </section>
+    <section class="class3">
+        <h1>CSS selectors</h1>
+        <p>
+            Visus CSS selektorius galima rasti <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank"> </a>
+        </p>
+        <ul>
+            <li>element - tago vardą</li>
+            <li class="class0">.class -  tagui suteiktą klasę</li>
+            <li id="id0"> - tagui suteiktas id</li>
+            <li class="class1 class2">.class1.class2 - tagui suteiktos abi (arba daugiau) klasės</li>
+            <li class="class4">.class3 .class4 - tagui suteikia stilius, jei jis turi 
+                class4 klasę ir yra class3 palikuonis (desendent)</li>
+            <li>* - parenka viską</li>
+            <li> element1, element2 - išvardintus elementus ir kableliu atskirtus
+                elementus</li>
+            </li>
+            <li>element1 > element2 / element2 - element1 vaikinis elementas 
+                element2 / element2, kurio tėvinis elementas yra element1
+            </li>
+            <li>a:link - nelankytos nuorodos</li>
+            <li>a:visited - lankytos nuorodos</li>
+            <li>a:active - aktyvi nuoroda (paspaudimo momentas)</li>
+            <li>element:hover - elementas ant kurio užvesta pelė</li>
+            <p><a href="https://codeacademy.lt/apie/destytojai/" target="_blank"></a> Dėstytojai</p>
+        </ul>
+    </section>
+    
+</body>
+</html>
