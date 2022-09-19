@@ -48,3 +48,57 @@ a:active{
 li:hover{
     background-color: dimgray;
 }
+.nth_lentele > table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto 50px;
+    overflow: hidden;
+
+}
+.nth_lentele th, .nth_lentele td{
+    border:1px solid black;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+/* .nth_lentele tbody > tr:nth-child(3){
+    color: brown;
+    background-color: bisque;
+}
+*/
+/* 
+2n - even - lyginiai
+2n+1 - odd - nelyginiai
+ */
+/* .nth_lentele tbody > tr:nth-child(even){
+    color: brown;
+    background-color: bisque;} */
+
+/* .nth_lentele tbody > tr:hover{
+    background-color:darksalmon;
+} */
+/* 
+Stulpelių žymėjimas: 
+Position
+z-index
+width+height
+background color
+
+*/
+.nth_lentele tbody > tr:hover{
+    background-color: lightpink;
+}
+.nth_lentele th{
+    background-color:indianred ;
+}
+.nth_lentele td:hover::after{
+    background-color: lightpink;
+    content: '';
+    position: absolute;
+    height: 10000px;
+    top: -5000px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
