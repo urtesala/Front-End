@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 paskaita - Flex</title>
+    <link rel="stylesheet" href="./6paskaita.css">
+</head>
+<body>
+    <section> <!--FLEX TEORIJA-->
+        <h1>Display: Flex</h1>
+        <p>Suteikus konteineriui flex nustatymą, jo viduje
+            elementai išsidėsto vienas šalia kito.<br>
+
+            Elementai gali susispausti, kad tilptų į vieną eilutę
+            šitaip ignoruodami savo pačių nustatytus dydžius.<br>
+
+            Sutaikus flex konteineriui flex-direction - galime valdyti
+            jo viduje esančių elementų išsidėstymo tvarką.<br>
+
+            Suteikus flex konteineriui flex wrap'ą - galime nurodyti ar ir kaip
+            elgtis (perkelti) esant elementų pertekliui vienoje eilutėje arba stulpelyje.<br>
+
+            Suteikus flex konteineriui justify-content - galime valdyti kaip
+            elementai išsidėsto (tarpai tarp elementų) eilutėje (jeigu flex-direction yra row)<br>
+
+            Suteikus konteineriui align-content - galime valdyti kaip elementai
+            išsidėsto (elementų grupės) stulpelyje (jeigu flex-direction yra row) <br>
+            
+            Suteikus flex konteineriui align - items - galime valdyti kaip
+            elementai išsidėsto (elementų grupės) stulpelyje (jeigu flex-direction yra row)<br>
+
+            Suteikus flex konteineriui gap - galime nurodyti kokie tarpai turi būti tarp jo vaikinių elementų. <br>
+
+
+
+        </p>
+        <div class="flexContainer">
+            <div class="kvadratas">1</div>
+            <div class="kvadratas">2</div>
+            <div class="kvadratas">3</div>
+            <div class="kvadratas">4</div>
+            <div class="kvadratas">5</div>
+            <div class="kvadratas">6</div>
+            <div class="kvadratas">7</div>
+            <div class="kvadratas">8</div>
+            <div class="kvadratas">9</div>
+            <div class="kvadratas">10</div>
+            <div class="kvadratas">11</div>
+            <div class="kvadratas">12</div>
+            <div class="kvadratas">13</div>
+
+
+        </div>
+    </section>
+    <section><!--UŽDAVINIAI-->
+        <div class="pirmasPratimas"><!--simple flex in flex-->
+            <div class="pirmasKvadratas kvadratai">1</div>
+            <div class="flexInFlex">
+                <div class="antrasKvadratas kvadratai">2</div>
+                <div class="flexInFlexInFlex">
+                    <div class="trečiasKvadratas kvadratai">3</div>
+                    <div class="ketvirtasKvadratas kvadratai">4</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="bigTaskContainer containerTask1">
+            <div class="containerTask1NextLevel">
+                <div class="uzd1 w33"></div>
+                <div class="uzd1 w66"></div>
+            </div>
+            <div class="containerTask1NextLevel">
+                <div class="uzd1 w66"></div>
+                <div class="uzd1 w33"></div>  
+            </div>
+            <div class="containerTask1NextLevel">
+                <div class="uzd1 w33"></div>
+                <div class="uzd1 w66"></div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="bigTaskContainer containerTask2">
+            <div class="containerTask2Level2 h66">
+                <div class="taskBg w66"></div>
+                <div class="containerTask2Level2 w33">
+                    <div class="taskBg h50"></div>
+                    <div class="taskBg h50"></div>
+                </div>
+            </div>
+            <div class="containerTask2Level1 h33">
+                <div class="taskBg w33"></div>
+                <div class="taskBg w33"></div>
+                <div class="taskBg w33"></div>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>

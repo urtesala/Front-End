@@ -1,0 +1,104 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+html{
+    scroll-behavior: smooth;
+    margin: 15px;
+}
+body{
+    background-color: #FFEED6;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    height: 60px;
+    background-color:#2B061E;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    font-size:130%;
+    border-radius: 20px;
+}
+a:link{
+    color: #FFEED6;
+}
+a:visited{
+    color: #FFEED6
+}
+a:hover{
+    color: #D2BF55
+}
+
+.mainMenu{
+    display: flex;
+    align-items: center;
+    width: 20%;
+
+}
+.mainMenu > ul{
+    padding: 0;
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    ;
+}
+.mainMenu li{
+    list-style-type: none;
+    margin: 7px;
+}
+.mainMenu a{
+    text-decoration: none;
+}
+.fixed{
+    position: fixed;
+    top:20px;
+}
+.firstSecion{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.div1Div2{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 20px;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 5px;
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+}
+h2,p{
+    text-align: center;
+    color:#2B061E;
+    margin: 20px; 
+}
+p:hover{
+    background-color: #875053;
+    border-radius: 15px;
+}
+.div3{
+    width: 100%;
+    height: fit-content;
+    border: #2B061E solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+footer{
+    background-color:#2B061E;
+    color: #FFEED6;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size:medium;
+    border-radius: 20px;
+}
