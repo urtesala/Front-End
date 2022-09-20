@@ -1,0 +1,240 @@
+ @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-top: 0;
+}
+img{
+    max-width: 100%;
+}
+footer{
+    background-color: #273131;
+    color: #a2c0be;
+    height: 40px;
+}
+
+/* HELPER CSS ============ */
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width:800px;
+    height:auto;
+    margin: 0 auto;
+}
+/* HELPER CSS ============ */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;
+    width: 100%; */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 4px 11px 0px rgb(82, 81, 81);
+    z-index: 1;
+}
+
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+.logo span{
+    font-weight: normal;
+}
+.navLink{
+    padding: 10px 20px;
+    /* border: 1px solid black; */
+}
+.mainHeader a{
+    letter-spacing: 4px;
+}
+.mainHeader a:hover{
+    background-color: lightgray;
+}
+
+/* HERO */
+
+.hero{
+    background-color: coral;
+    min-height: 100vh;
+    background: url(../img/architect\ \(1\).jpg) no-repeat center;
+    background-size: cover;
+
+}
+.heroTitle{
+    font-size: 40px;
+    color: white;
+}
+
+.box{
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+
+}
+.heroTitle span{
+    font-weight: normal;
+}
+
+/* PROJECTS ============ */
+
+.projects{
+    padding: 40px 30px 0px;
+}
+.project{
+    position: relative; 
+    flex-basis: 19%;
+    flex-grow: 1;
+}
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+    padding-top: 30px;
+}
+.prTitle{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+hr{
+    height: 1px;
+    border-width: 0;
+    border-bottom: 1px solid lightgrey;
+}
+.secTitle{
+    font-weight: normal;
+}
+.stDiv{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+.ndDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    display: block;
+    height: 40px;
+    width: 100%;
+    border:none;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+.button2{
+    display: block;
+    height: 40px;
+    width: 100%;
+    border:none;
+    letter-spacing: 2px;
+    text-align: center;
+    border-color: darkgray;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color:gray;
+    border: none;
+}
+.button2:hover{
+    background-color:gray;
+    border: none;
+}
+
+.formContainer{
+    background-color: #a2c0be;
+    max-width: 400px;
+    min-height: auto;
+    padding: 20px 30px;
+}
+.input{
+    display: block;
+    padding: 5px 7px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+}
+.imput:focus-visible{
+    outline-color: #476260;
+}
+
+.contactForm{
+    display: flex;
+    gap:16px;
+    flex-wrap: wrap;
+}
+.half{
+    flex-basis: 47%;
+}
+.full{
+    flex-basis: 100%;
+}
+.textarea{
+    resize: vertical;
+}
+.formRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+li{
+    list-style-type: none;
+    font-size: smaller;
+    color: gray;
+}
+.contact{
+    font-size: larger;
+    color:#476260;
+    text-decoration: underline;
+}
+.contactUs{
+    font-size: large;
+    color: #273131;
+    font-weight: bolder;
+}
+.contactsAlign{
+    display: flex;
+}
+.contactSpacing{
+    margin:30px 50px 30px 38px
+}
+.contactFinal{
+    background-color: #c3e1df;
+    width: 400px;
+    text-align: left;
+}
+.map{
+    margin: 40 0 15;
+}
+.ftt{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
