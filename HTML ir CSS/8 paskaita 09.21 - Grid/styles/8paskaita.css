@@ -1,0 +1,71 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:16px;
+}
+
+.gridItem{
+    min-height: 150px;
+    background-color: burlywood;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.gridItem h2{
+    font-size: 30px;
+}
+.gridItem1{
+    grid-row: 1 / span 2;
+}
+.gridItem2{
+    grid-column: 2 / span 2;
+}
+.gridItem6{
+    grid-column: 2 / span 2;
+}
+
+
+/* KITA DALIS */
+
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas:
+     "header header header"
+     "aside main imageBlock"
+     "aside footer imageBlock"
+    ;
+}
+.header{
+    background-color: blueviolet;
+    grid-area: header;
+}
+.imageBlock{
+    background-color: chocolate;
+    grid-area: imageBlock;
+}
+
+.imageBlock img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.main{
+    background-color: deeppink;
+    grid-area: main;
+}
+.aside{
+    background-color: deepskyblue;
+    grid-area: aside;
+}
+.footer{
+    background-color: darkgreen;
+    grid-area: footer;
+}
