@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 paskaita</title>
+    <link rel="stylesheet" href="../styles/9paskaitastyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>SEND US A MESSAGE</h1>
+        <form class="form">
+            <input class="textInput" type="text" placeholder="Full name"></input>
+            <input class="textInput" type="text" placeholder="E-mail"></input>
+            <input class="textInput" type="text" placeholder="Phone"></input>
+            <div class="mb-20">
+                <input type="checkbox" id="salygos">
+                <label for="salygos"> Terms and conditions</label>
+
+            </div>
+            <label>Your b-day</label>
+            <input class="textInput" id="bDay" type="date"/>
+        
+            <label for="town">City</label>
+            <select id="town" class="textInput">
+                <option selected disabled>Please select town</option>
+                <option>Vilnius</option>                
+                <option>Kaunas</option>                
+                <option>Klaipėda</option>                
+                <option>Šiauliai</option>                
+            </select>
+
+            <label for="avatar">
+                <input type="file">
+            </label>l
+
+            <textarea class="textInput" placeholder="Your message"></textarea>
+            <button class="submitBtn" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send</button>
+        </form>
+
+
+    </div>
+    
+</body>
+</html>

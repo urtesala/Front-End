@@ -1,0 +1,56 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import '../reset.css';
+.form {
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.form::placeholder{
+    color: #bdbdd3;
+}
+.textInput{
+    width: 100%;
+    display: block;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: width 0.2s ease-in;
+}
+
+.textInput:focus-visible{
+    outline: none;
+    width: 110%;
+}
+
+textarea.textInput{
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submitBtn {
+    border: none;
+    line-height: 1.1;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #827ffe;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: padding 0.3s; background-color: 0.3s;
+    align-self: center;
+}
+
+.submitBtn:hover{
+    padding: 15px 45px;
+    background-color: #5352b4;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+/* select.textInput {
+    color: gray;
+} */
