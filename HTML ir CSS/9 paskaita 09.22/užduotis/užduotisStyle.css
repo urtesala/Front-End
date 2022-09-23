@@ -117,3 +117,16 @@ p {
     
 }
 
+.mapSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+}
+.left {
+    align-self: center;
+  }
+  
+  .mapWindow {
+    width: 100%;
+    height: 100%;
+  }
