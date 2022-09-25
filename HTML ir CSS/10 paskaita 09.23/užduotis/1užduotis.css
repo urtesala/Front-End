@@ -1,0 +1,50 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import '../reset.css';
+
+body{
+    background-color: lightgray;
+}
+.gridLayout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:5px;
+    max-width: 1000px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+.div1{
+    grid-column: 1 / span 2;
+}
+.div4{
+    grid-column: 2 / span 2;
+}
+
+@media only screen and (max-width:709px){
+    body{
+        background-color: red;
+    }
+    .div1{
+        grid-column: span 4;
+    }
+    .div2 {
+        width: 330px;
+    }
+    .div3{
+        width: 330px;
+    }
+    .div4{
+        grid-column: span 4;
+    }
+
+    
+
+}

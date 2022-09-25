@@ -1,0 +1,95 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import '../reset.css';
+
+.container {
+  max-width: 1140px;
+  padding-top: 2rem;
+}
+
+img{
+    min-width: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #7a838b;
+}
+
+/* Section Trip */
+
+.secTitle {
+  font-size: 3.8rem;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: normal;
+}
+
+.secSubTitle {
+  max-width: 540px;
+  text-align: center;
+  margin: 0 auto 4rem;
+  line-height: 1.5;
+}
+
+.tripGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.tripItem {
+  background-color: #fff;
+}
+
+.tripDesc {
+  padding: 2.7rem 2rem 2.5rem;
+}
+
+.tripTitle {
+  font-size: 2.2rem;
+  margin-bottom: 0.4em;
+  font-weight: normal;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+.space-between {
+  justify-content: space-between;
+}
+.pos-rel {
+  position: relative;
+}
+
+.tripRating .fa {
+  color: goldenrod;
+}
+
+.tripPrice {
+  background-color: #1ec6b6;
+  border-radius: 20px;
+  padding: 0.2em 0.7em;
+  color: #fff;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+@media only screen and (max-width:750px) {
+
+    .tripGrid{
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media only screen and (max-width:450px) {
+
+    .tripGrid{
+        grid-template-columns: 1fr;
+    }
+}
