@@ -1,0 +1,68 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import '../reset.css';
+
+html {
+    font-size: 100%;
+}
+
+.post{
+    margin-bottom: 1rem;
+}
+
+.post h3{
+    font-size: 1.4rem;
+}
+img{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    /* tablet taisykles */
+    html{
+        font-size: 120%;
+    }
+    .card {
+      background-color: rgb(248, 149, 131);
+    }
+    .posts {
+        display: grid;
+        gap:1rem;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .post_1{
+        grid-column: 1 /span 3;
+    }
+  }
+
+  @media screen and (min-width: 1020px) {
+    /* laptop taisykles */
+
+    html{
+        font-size: 145%;
+    }
+    .card {
+      background-color: rgb(248, 246, 131);
+    }
+
+    .posts{
+        display: grid;
+        gap:1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "post_1 post_1 post_2 post_2"
+        "post_1 post_1 post_2 post_2"
+        "post_1 post_1 post_3 post_4"
+    }
+    .post_1{
+        grid-area: post_1;
+    }
+    .post_2{
+        grid-area: post_2;
+    }
+    .post_3{
+        grid-area: post_3;
+    }
+    .post_4{
+        grid-area: post_4;
+    }
+  }

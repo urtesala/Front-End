@@ -1,0 +1,133 @@
+@import '../reset.css';
+
+/* Global */
+
+html {
+    font-size: 16px;
+  }
+  
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    border-radius: 0;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  /* HERO */
+  
+  .hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0 1.5rem;
+  }
+  
+  .hero__title {
+    font-size: 1.5rem;
+  }
+  
+  .hero__hr {
+    background-color: #fff;
+    height: 2px;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .hero__subTitle {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  
+  /* POSTS */
+  
+  .post {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 320px;
+  }
+  
+  .post__header {
+    align-self: center;
+    max-width: 60%;
+    padding: 0 1.5rem;
+    color: white;
+  }
+
+  .post__header,
+  .post__image,
+  .post__overlay {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+  .post__overlay1, 
+  .post__overlay2,
+  .post__overlay3, 
+  .post__overlay4, 
+  .post__overlay5, 
+  .post__overlay6 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .post__image {
+    align-self: stretch;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .post__overlay1 {
+    background-color: rgba(61, 225, 178, 0.58);
+  }
+  .post__overlay2 {
+    background-color: rgba(61, 171, 225, 0.58);
+  }
+  .post__overlay3 {
+    background-color: rgba(225, 61, 187, 0.58);
+  }
+  .post__overlay4 {
+    background-color: rgba(225, 222, 61, 0.58);
+  }
+  .post__overlay5 {
+    background-color: rgba(225, 72, 61, 0.58);
+  }
+  .post__overlay6 {
+    background-color: rgba(140, 61, 225, 0.58);
+  }
+
+
+  .post__title {
+    text-transform: capitalize;
+    margin-bottom: 0;
+  }
+  .post__hr {
+    background-color: #fff;
+    height: 2px;
+    margin: 0.7rem 0;
+    width: 30%;
+  }
+  .post__overlay1, 
+  .post__overlay2, 
+  .post__overlay3, 
+  .post__overlay4, 
+  .post__overlay5, 
+  .post__overlay6  {
+    transition: opacity 0.2s;
+  }
+
+  .post:hover .post__overlay1, 
+  .post__overlay2, 
+  .post__overlay3, 
+  .post__overlay4, 
+  .post__overlay5, 
+  .post__overlay6 {
+    opacity: 0.4;
+  }
