@@ -26,11 +26,7 @@ select {
   border: 1px solid #777;
   display: block;
 }
-textarea {
-  min-height: 5rem;
-  min-width: 500px;
-  resize: vertical;
-}
+
 
 button {
   font-size: 16px;
