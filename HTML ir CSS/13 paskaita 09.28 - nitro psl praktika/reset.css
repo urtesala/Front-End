@@ -50,10 +50,6 @@ p {
   margin-top: 0;
 }
 
-.container {
-  padding: 0.8rem;
-}
-
 .card {
   padding: 1rem;
   box-shadow: 5px 5px 10px rgb(180, 190, 194);
