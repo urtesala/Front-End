@@ -170,13 +170,13 @@ html {
 
 }
 
-/* .whiteBlock {
+.whiteBlock {
     position: absolute;
     width: 200%;
-    height: 3rem;
+    height: 12rem;
     content: "";
     bottom: 0;
-    top:40rem;
+    top:36rem;
     background: #fff;
     transform: rotate(-5deg) translateX(-20%);
     z-index: 5;
@@ -188,10 +188,9 @@ html {
     height: 1rem;
     content: "";
     bottom: 0;
-    top:45rem;
     background: #fff;
     z-index: 5;
-} */
+}
 
 /* OVERLAYYY */
 
