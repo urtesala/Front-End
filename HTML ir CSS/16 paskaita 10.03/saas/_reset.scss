@@ -52,7 +52,9 @@ p {
 }
 
 .container {
-  padding: 0.8rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .card {
