@@ -1,0 +1,49 @@
+@use 'vars' as v;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  color: transparentize(black, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.8em 1.5em;
+  background-color: v.$primary-color;
+  color: v.$primary-light-color;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 1px solid v.$primary-color;
+}
+.btn--outline {
+  // paveldim viska is .btn
+  @extend .btn;
+  background: transparent;
+  color: v.$primary-color;
+}
+
+.header-pill {
+  background-color: v.$secondary-bg-color;
+  color: v.$secondary-color;
+  font-size: 10px;
+  border-radius: 20px;
+  padding: 0.5em 2em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  color: v.$primary-color;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
